@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greening Your Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="sample_logo.png" alt="Sustainable Home Logo" class="logo" onclick="scrollToSection('#hero')">
+            <span class="logo-text">Sustainable Home</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#hero" class="animated-button">Home</a></li>
+                <li><a href="#about" class="animated-button">About</a></li>
+                <li><a href="#appliances" class="animated-button">Appliances</a></li>
+                <li><a href="#projects" class="animated-button">Projects</a></li>
+                <li><a href="#videos" class="animated-button">Videos</a></li>
+                <li><a href="#contact" class="animated-button">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>The Rise of Sustainable Home Appliances</h2>
+            <p>Transform your home into an eco-friendly sanctuary. Discover energy-efficient appliances and eco-friendly living tips!</p>
+            <a href="#appliances" class="cta-button">Explore Appliances</a>
+            <a href="#about" class="secondary-button">Learn More</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Sustainable Home Appliances</h2>
+        <p>Sustainable home appliances are designed with the environment in mind. These appliances consume less energy, use fewer resources, and often last longer than traditional models.</p>
+        <p>Choosing eco-friendly home appliances can greatly reduce your carbon footprint. Here are a few reasons to go green with your home:</p>
+        <ul>
+            <li>**Energy Efficiency**: Lower utility bills and conserve energy.</li>
+            <li>**Durability**: Eco-friendly products are often built to last.</li>
+            <li>**Water Conservation**: Many appliances now use far less water than their traditional counterparts.</li>
+        </ul>
+        <img src="sustainable_appliance.jpg" alt="Sustainable Home Appliances" class="about-image">
+    </section>
+
+    <section id="appliances">
+        <h2>Popular Sustainable Home Appliances</h2>
+        <div class="tips-container">
+            <div class="tip">🧺 Energy-Efficient Washing Machines</div>
+            <div class="tip">🌞 Solar-Powered Water Heaters</div>
+            <div class="tip">🔌 Smart Thermostats</div>
+            <div class="tip">🍳 Induction Cooktops</div>
+            <div class="tip">💡 LED Lighting Systems</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Our Eco-Friendly Projects</h2>
+        <p>Discover our initiatives aimed at building eco-friendly homes with sustainable appliances. From energy-efficient appliances to solar-powered systems, we are at the forefront of green innovation.</p>
+        <div class="projects-container">
+            <div class="project">
+                <h3>Solar Energy Installation</h3>
+                <p>Our project focuses on installing solar panels in residential homes to reduce reliance on non-renewable energy.</p>
+                <a href="solar_project.html" class="project-button">Read More</a>
+            </div>
+            <div class="project">
+                <h3>Water-Efficient Appliances</h3>
+                <p>We promote the installation of water-efficient appliances, helping homeowners conserve water without sacrificing performance.</p>
+                <a href="water_efficiency_project.html" class="project-button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Watch Our Eco-Friendly Appliance Demos</h2>
+        <div class="video-container">
+            <iframe width=500 height=300 controls src="energy_efficient_washing_machine_demo.mp4" frameborder="0" allowfullscreen></iframe>
+            <iframe width=500 height=300 controls src="solar_powered_heater_demo.mp4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>Learn how these appliances can save energy and reduce your carbon footprint!</h2>
+    </section>
+
+    <footer id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@sustainablehome.org</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <div class="background-animation"></div>
+
+    <script>
+        // Smooth scrolling to sections
+        function scrollToSection(id) {
+            document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Navbar link smooth scroll
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = e.target.getAttribute('href');
+                scrollToSection(target);
+            });
+        });
+
+        // Logo hover animation
+        document.querySelector('.logo').addEventListener('mouseover', () => {
+            document.querySelector('.logo').style.transform = 'rotate(360deg)';
+            document.querySelector('.logo').style.transition = 'transform 0.5s';
+        });
+
+        document.querySelector('.logo').addEventListener('mouseout', () => {
+            document.querySelector('.logo').style.transform = 'rotate(0deg)';
+        });
+    </script>
+</body>
+</html>
