@@ -95,12 +95,9 @@
     <div class="background-animation"></div>
 
     <script>
-        // Smooth scrolling to sections
         function scrollToSection(id) {
             document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
         }
-
-        // Navbar link smooth scroll
         document.querySelectorAll('nav ul li a').forEach(link => {
             link.addEventListener('click', (e) => {
                 e.preventDefault();
@@ -108,8 +105,6 @@
                 scrollToSection(target);
             });
         });
-
-        // Logo hover animation
         document.querySelector('.logo').addEventListener('mouseover', () => {
             document.querySelector('.logo').style.transform = 'rotate(360deg)';
             document.querySelector('.logo').style.transition = 'transform 0.5s';
