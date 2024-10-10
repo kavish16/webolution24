@@ -160,15 +160,3 @@ footer {
     from { transform: translateY(50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
 }
-.animated-button:hover
-{
-text-decoration:underline violet 4px;
-}
-
-#video
-{
-   
-   position: absolute;
-   opacity: 0.9;
-}
-
