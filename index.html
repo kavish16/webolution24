@@ -9,7 +9,7 @@
 <body>
     
             
-    <video src="5823676-uhd_3840_2160_24fps.mp4" muted loop autoplay id="video" width="100%"></video>          
+    <div class="video"><video src="5823676-uhd_3840_2160_24fps.mp4" muted loop autoplay width="100%"></video></div>       
         
         <nav>
             <ul>
@@ -32,29 +32,20 @@
             <a href="#about" class="secondary-button">Learn More</a>
         </div>
     </section>
+    
+    <section id = "mg">
+    <h1 id="heading">Popular Sustainable Home Appliances</h1>
+    <div class = "container">
+        <div class="product"><a href="" class="hd">Electric Kettles</a><img src="pexels-peterfazekas-885455.jpg" height="500px" width="500px"></div>
+        <div class="product"><a href="" class="hd" style="text-align: center;">Energy Efficient <br>Refrigerators</a><img src = "pexels-cottonbro-4068317.jpg" height="500px" width="500px"></div>
+        <div class="product"><a href="" class="hd">Solar Lights</a><img src="pexels-jan-van-bizar-92378004-27863809.jpg" height="500px" width="500px"></div>
+        <div class="product"><a href="" class="hd" style="text-align: center;">Recyclable<br>cabinets</a><img src="pexels-vlada-karpovich-4050318.jpg" height="500px" width="500px"></div>
+    </div>
+</section>
+    
 
-    <section id="about">
-        <h2>About Sustainable Home Appliances</h2>
-        <p>Sustainable home appliances are designed with the environment in mind. These appliances consume less energy, use fewer resources, and often last longer than traditional models.</p>
-        <p>Choosing eco-friendly home appliances can greatly reduce your carbon footprint. Here are a few reasons to go green with your home:</p>
-        <ul>
-            <li>**Energy Efficiency**: Lower utility bills and conserve energy.</li>
-            <li>**Durability**: Eco-friendly products are often built to last.</li>
-            <li>**Water Conservation**: Many appliances now use far less water than their traditional counterparts.</li>
-        </ul>
-        <img src="sustainable_appliance.jpg" alt="Sustainable Home Appliances" class="about-image">
-    </section>
 
-    <section id="appliances">
-        <h2>Popular Sustainable Home Appliances</h2>
-        <div class="tips-container">
-            <div class="tip">🧺 Energy-Efficient Washing Machines</div>
-            <div class="tip">🌞 Solar-Powered Water Heaters</div>
-            <div class="tip">🔌 Smart Thermostats</div>
-            <div class="tip">🍳 Induction Cooktops</div>
-            <div class="tip">💡 LED Lighting Systems</div>
-        </div>
-    </section>
+   
 
     <section id="projects">
         <h2>Our Eco-Friendly Projects</h2>
@@ -95,6 +86,7 @@
     <div class="background-animation"></div>
 
     <script>
+        
         function scrollToSection(id) {
             document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
         }
@@ -113,6 +105,8 @@
         document.querySelector('.logo').addEventListener('mouseout', () => {
             document.querySelector('.logo').style.transform = 'rotate(0deg)';
         });
+    
+       
     </script>
 </body>
 </html>
